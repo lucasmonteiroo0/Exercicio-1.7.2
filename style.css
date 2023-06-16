@@ -1,0 +1,152 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+@media (min-width: 1280px){
+
+.container{
+    height: 100%;
+    display: grid;
+    gap: .5em;
+    grid-template-areas: 
+    'header header header header header header header header'
+    'pesquisa noticias noticias noticias noticias noticias noticias noticias'
+    'pesquisa noticias noticias noticias noticias noticias noticias noticias';
+}
+.header{
+    border: solid #000000;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+}
+.pesquisa_categorias{
+    border: solid #000000;
+    grid-area: pesquisa;
+    height: 100%;
+}
+.noticias{
+    border: solid #000000;
+    grid-area: noticias;
+}
+.logo{
+    border: solid #000000;
+    margin: .5em;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    height: 5em;
+    text-align: center;
+
+}
+.menu{
+    border: solid #000000;
+    margin: .5em;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    height: 3.5em;
+        text-align: center;
+}
+.pesquisa{
+    border: solid #000000;
+    margin: .5em;
+    text-align: center;
+}
+input{
+    height: 2em;
+    margin-bottom: 1em;
+}
+button{
+    height: 2em;
+    width: 2em;
+}
+.categorias{
+    border: solid #000000;
+    margin: .5em;
+    text-align: center;
+    height: 70%;
+}
+.logo{
+    border: solid #000000;
+}
+.menu{
+    border: solid #000000;
+}
+.categorias{
+    border: solid #000000;
+}
+.logo{
+    border: solid #000000;
+}
+.box_1{
+    border: solid #000000;
+    margin: .5em;
+}
+.box_2{
+    border: solid #000000;
+    margin: .5em;
+}
+.box_3{
+    border: solid #000000;
+    margin: .5em;
+}
+}
+@media (max-width: 1279px){
+.container{
+    height: 100%;
+    display: grid;
+    align-items: center;
+    grid-template-rows: auto auto;
+    
+}
+.header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    height: 100%;
+}
+.noticias{
+    border: solid #000000;  
+    grid-row-start: 2;
+    grid-row-end: 3;  
+    height: 100%;
+}
+.logo{
+    border: solid #000000;
+    margin-bottom: .5em;
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+    height: 40%;
+}
+.logo_{
+    border: solid #000000;
+    height: 40%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+  
+
+}
+.menu{
+    border: solid #000000;
+    grid-area: menu;
+    text-align: center;
+    height: 55%;
+    margin-top: .5em;
+}
+.box_1, .box_2{
+    border: solid #000000;
+    margin: .5em;
+    text-align: start;
+    padding: 0 1em;
+    height: 50%;
+}
+
+.pesquisa_categorias, .box_3{
+    display: none;
+}
+}
